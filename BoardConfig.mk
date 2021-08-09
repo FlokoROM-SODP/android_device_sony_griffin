@@ -15,9 +15,9 @@
 include device/sony/kumano/PlatformConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := unknown
-ifneq (,$(filter %j8110,$(TARGET_PRODUCT)))
+ifneq (,$(filter %j8110 lineage_griffin,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := J8110
-else ifneq (,$(filter %j9110,$(TARGET_PRODUCT)))
+else ifneq (,$(filter %j9110 lineage_griffin_dsds,$(TARGET_PRODUCT)))
 TARGET_BOOTLOADER_BOARD_NAME := J9110
 else
 TARGET_BOOTLOADER_BOARD_NAME := J8110
